@@ -36,7 +36,11 @@ public class Day1 {
     }
     sc2.close();
 //    inputFile.close();
-    System.out.printf("sum: %d%n num1: %d%n num2: %d%n", sum, num1, num2);
+    System.out.printf("PART 1: %n sum: %d%n num1: %d%n num2: %d%n ------------", sum, num1, num2);
+    doPart2();
     System.out.print("End of program");
+  }
+  public static void doPart2() {
+
   }
 }
