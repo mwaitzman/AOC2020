@@ -1,0 +1,18 @@
+data
+
+Pattern {
+NAME + "bags contain" + CONTENTS
+
+def NAME {
+  Pattern ".*"// = String
+}
+
+def CONTENTS {
+  _EMPTY or {
+    (INT + STRING *>=1)
+  }
+}
+
+def _EMPTY {
+  literal("contains no other bags.");
+}
